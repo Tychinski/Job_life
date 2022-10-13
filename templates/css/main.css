@@ -1,0 +1,31 @@
+.content{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.data_options {
+    display:flex;
+}
+
+.data_options select {
+    width: 33%;
+    margin-right: 1%;
+}
+
+.data_options button{
+    width: 33%;
+}
+
+.data_table {
+    margin-top: 20px;
+}
+
+.data_table input {
+    width: 100%;
+}
+
+.file_input {
+    margin-top: 20px;
+}

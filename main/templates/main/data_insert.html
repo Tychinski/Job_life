@@ -1,0 +1,33 @@
+{%  extends 'base.html' %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="content">
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div>
+            <div class="data_options">
+                {{ form.model | attr:"class:form-select" }}
+                {{ form.insert_type | attr:"class:form-select" }}
+                <button type="submit" class="btn btn-primary" id="btn_insert">Внести данные</button>
+            </div>
+                <div>
+            {{ form.file_field | attr:"class:form-control file_input"}}
+            </div>
+            </div>
+        </form>
+
+{#        <div>#}
+{#            <table class="data_table table table-primary table-striped" id="data_table">#}
+{#                <thead id="table_head">#}
+{#                    <tr>#}
+{#                    </tr>#}
+{#                </thead>#}
+{#                <tbody id="table_body">#}
+{#                <tr>#}
+{#                </tr>#}
+{#                </tbody>#}
+{#            </table>#}
+{#        </div>#}
+</div>
+{% endblock %}
